@@ -7,14 +7,10 @@ label{
 form{
     text-align: left;
 }
+
 p{
     line-height: 1.9;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-decoration: dashed;
-}
-
-div{
-    
-    background-image: url("https://marketplace.canva.com/EAF9b0hoPBE/2/0/1131w/canva-menu-de-comida-restaurante-moderno-fotogr%C3%A1fico-marr%C3%B3n-Chz14uZvuZo.jpg");
 }
