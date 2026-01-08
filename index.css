@@ -1,4 +1,5 @@
 
+
 * {
     margin: 0;
     padding: 0;
@@ -58,7 +59,7 @@ nav {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 110px;
 }
 
 nav a {
@@ -87,7 +88,7 @@ nav a.activo {
 main {
     max-width: 900px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding:  1rem;
 }
 
 section {
