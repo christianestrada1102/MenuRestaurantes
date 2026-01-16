@@ -1,68 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenuFy</title>
-    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="index.css" />
     <link rel="icon" type="image/png" href="img/MF.png">
-    
+
 </head>
 
 <body>
 
 
-  <div class="logo">
-    <img src="img/Menufy.png" alt="Imagen del logo de MenuFy">
-    <p>Menús digitales para tu restaurante</p>
-</div>
+
+    <div class="logo">
+        <img src="img/MenuFy2.png" alt="Logo de MenuFy - Menús digitales">
+        <p>Transforma tu restaurante con menús digitales modernos</p>
+    </div>
+
+    <section class="hero">
+        <h1>¿Quieres un menú digital como este para tu restaurante?</h1>
+        <p class="hero-subtitle">Explora cómo se vería tu menú con un diseño moderno, profesional y fácil de actualizar
+        </p>
+
+        <div class="hero-buttons">
+            <a href="demo.html" class="btn-demo-grande">Ver Menú Demo Completo </a>
+            <a href="#contacto" class="btn-contacto">Solicitar mi Menu</a>
+        </div>
+    </section>
+
+    <!-- marcar desactivdado cuando no es movil  -->
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-hamburguesa">
+        <span class="hamburguesa"></span>
+        <span class="hamburguesa"></span>
+        <span class="hamburguesa"></span>
+    </label>
 
 
 
 
-
-
-   <nav role="navigation" aria-label="Navegacion principal del menu">
-        <a href="#" aria-label="Ir al inicio de la pagin">Inicio</a>
+    <nav role="navigation" aria-label="Navegacion principal del menu">
+        <label for="menu-toggle" style="display: none;"></label>
+        <a href="#" aria-label="Ir al inicio de la pagina">Inicio</a>
         <a href="#ramen" aria-label="Ver seccion de ramen">Ramen</a>
         <a href="#entradas" aria-label="Ver seccionde entradas">Entradas</a>
         <a href="#especiales" aria-label="Ver seccion de especiales">Platos Especiales</a>
         <a href="#bebidas" aria-label="Ver seccion de bebidas">Bebidas</a>
-        <a href="#contacto" aria-label="Ver seccion de contacto">Contacto</a>
-        <a href="demo.html"  aria-label="Ver la demo del menu completo">[ Ver Demo ]</a>
+        <a href="#beneficios" aria-label="Ver seccion beneficios">¿Por qué?</a>
+        <a href="demo.html" class="activo" aria-label="Ver la demo del menu completo">Demo Completa</a>
     </nav>
 
     <main id="inicio">
 
         <section id="ramen" aria-labelledby="ramen-title">
             <h2 id="ramen-title">Ramen</h2>
-            
+
             <div class="item">
-                <img src="https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=400" 
-                     alt="Imagen de un Tazon de ramen tradicional japones">
+                <img src="https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=400"
+                    alt="Imagen de un Tazon de ramen tradicional japones">
                 <div>
                     <h3>Ramen Tradicional</h3>
-                    <p>Fideos japoneses en caldo de larga cocción con cerdo marinado, huevo marinado, alga nori, cebollín y vegetales de temporada. La esencia de Japón en un tazón</p>
+                    <p>Fideos japoneses en caldo de larga cocción con cerdo marinado, huevo marinado, alga nori,
+                        cebollín y vegetales de temporada. La esencia de Japón en un tazón</p>
                     <p class="precio" aria-label="precio: 160 pesos">$160.00</p>
                 </div>
             </div>
 
             <div class="item">
-                <img src="https://images.unsplash.com/photo-1623341214825-9f4f963727da?w=400" 
-                     alt="Imagen de Tazon de Ramen picante">
+                <img src="https://images.unsplash.com/photo-1623341214825-9f4f963727da?w=400"
+                    alt="Imagen de Tazon de Ramen picante">
                 <div>
                     <h3>Ramen Picante</h3>
-                    <p>Fideos artesanales en caldo infusionado con aceite de chile y acompañados de cerdo chashu, huevo ajitama, cebollín y vegetales crujientes</p>
+                    <p>Fideos artesanales en caldo infusionado con aceite de chile y acompañados de cerdo chashu, huevo
+                        ajitama, cebollín y vegetales crujientes</p>
                     <p class="precio" aria-label="Precio: 175 pesos">$175.00</p>
                 </div>
             </div>
 
-             <div class="item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwoSPL0M8S3MR6cKh6LuBAWUuwKO-9bGTbEA&s" 
-                     alt="Imagen de Tazon de un ramen de Miso">
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwoSPL0M8S3MR6cKh6LuBAWUuwKO-9bGTbEA&s"
+                    alt="Imagen de Tazon de un ramen de Miso">
                 <div>
                     <h3>Ramen de Miso</h3>
-                    <p>Un caldo cremoso con un profundo sabor umami, fideos artesanales, cerdo marinado, huevo curado y el toque dulce del maíz. Un plato icónico de la cocina japonesa</p>
+                    <p>Un caldo cremoso con un profundo sabor umami, fideos artesanales, cerdo marinado, huevo curado y
+                        el toque dulce del maíz. Un plato icónico de la cocina japonesa</p>
                     <p class="precio" aria-label="Precio: 175 pesos">$175.00</p>
                 </div>
             </div>
@@ -71,33 +96,36 @@
 
         <section id="entradas" aria-labelledby="entradas-title">
             <h2 id="entradas-title">Entradas</h2>
-            
+
             <div class="item">
-                <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=400" 
-                     alt="Imagen de un plato de Gyozas de cerdo">
+                <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=400"
+                    alt="Imagen de un plato de Gyozas de cerdo">
                 <div>
                     <h3>Gyozas de Cerdo <span aria-label="% piezas"> (5 pzs) </span> </h3>
-                    <p>Empanadas japonesas rellenas de cerdo especiado con vegetales, servidas con salsa de la casa para sumergir</p>
+                    <p>Empanadas japonesas rellenas de cerdo especiado con vegetales, servidas con salsa de la casa para
+                        sumergir</p>
                     <p class="precio" aria-label="Precio: 85 pesos">$85.00</p>
                 </div>
             </div>
 
             <div class="item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb_RkjwafnujKnsf-COJ8X0GvRdbPGwVyfcA&s" 
-                     alt="Imagen de un plato de Edamames">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb_RkjwafnujKnsf-COJ8X0GvRdbPGwVyfcA&s"
+                    alt="Imagen de un plato de Edamames">
                 <div>
                     <h3>Edamames</h3>
-                    <p>Vainas de soja al vapor sazonadas con sal de mar gruesa. Ligeras, nutritivas y perfectas para el centro de la mesa</p>
+                    <p>Vainas de soja al vapor sazonadas con sal de mar gruesa. Ligeras, nutritivas y perfectas para el
+                        centro de la mesa</p>
                     <p class="precio" aria-label="Precio: 65 pesos">$65.00</p>
                 </div>
             </div>
 
             <div class="item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw0JmIlQo_YZc_fpIpf7Vajdzdxi3ID9RKnA&s" 
-                     alt="Imagen de unn plato de Rollos primavera">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw0JmIlQo_YZc_fpIpf7Vajdzdxi3ID9RKnA&s"
+                    alt="Imagen de unn plato de Rollos primavera">
                 <div>
                     <h3>Rollos Primavera</h3>
-                    <p>Rollitos dorados rellenos de vegetales y camarón, servidos con una clásica salsa agridulce para resaltar su sabor</p>
+                    <p>Rollitos dorados rellenos de vegetales y camarón, servidos con una clásica salsa agridulce para
+                        resaltar su sabor</p>
                     <p class="precio" aria-label="Precio: 75 pesos">$75.00</p>
                 </div>
             </div>
@@ -105,98 +133,145 @@
 
         <section id="especiales" aria-labelledby="especiales-title">
             <h2 id="especiales-title">Platos Especiales</h2>
-            
+
             <div class="item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9aTcl6n31i3y5LmTIEWp-P2D5v4_rv3nwzg&s" 
-                     alt="Imagen de un plato de Yakisoba">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9aTcl6n31i3y5LmTIEWp-P2D5v4_rv3nwzg&s"
+                    alt="Imagen de un plato de Yakisoba">
                 <div>
                     <h3>Yakisoba</h3>
-                    <p>Fideos salteados con una selección de vegetales frescos y tu proteína favorita en una reducción de salsa japonesa artesana</p>
+                    <p>Fideos salteados con una selección de vegetales frescos y tu proteína favorita en una reducción
+                        de salsa japonesa artesana</p>
                     <p class="precio" aria-label="Precio: 145 pesos">$145.00</p>
                 </div>
             </div>
 
             <div class="item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT30uRKN3TDAPZqULe-mFR7P0qL9jRvfo-PdA&s" 
-                     alt="Imagen  de un Poke Bowl">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT30uRKN3TDAPZqULe-mFR7P0qL9jRvfo-PdA&s"
+                    alt="Imagen  de un Poke Bowl">
                 <div>
                     <h3>Poké Bowl</h3>
-                    <p>Base de arroz de sushi con salmón fresco, aguacate cremoso, edamames, pepino y alga wakame, todo bañado en una refrescante salsa ponzu cítrica</p>
+                    <p>Base de arroz de sushi con salmón fresco, aguacate cremoso, edamames, pepino y alga wakame, todo
+                        bañado en una refrescante salsa ponzu cítrica</p>
                     <p class="precio" aria-label="Precio: 185 pesos">$185.00</p>
                 </div>
             </div>
 
             <div class="item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShwYrVcIr4VONXvVcy2wFeBtyH76UucAJ3og&s" 
-                     alt="Imagen de un tazon de Pad Thai">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShwYrVcIr4VONXvVcy2wFeBtyH76UucAJ3og&s"
+                    alt="Imagen de un tazon de Pad Thai">
                 <div>
                     <h3>Pad Thai</h3>
-                    <p>Tradicionales fideos de arroz salteados con camarones, tofu y huevo en una equilibrada salsa de tamarindo, terminados con el toque crujiente de cacahuates triturados</p>
+                    <p>Tradicionales fideos de arroz salteados con camarones, tofu y huevo en una equilibrada salsa de
+                        tamarindo, terminados con el toque crujiente de cacahuates triturados</p>
                     <p class="precio" aria-label="Precio: 155 pesos">$155.00</p>
                 </div>
             </div>
         </section>
 
-          <section id="bebidas" aria-labelledby="bebidas-title">
+        <section id="bebidas" aria-labelledby="bebidas-title">
             <h2 id="bebidas-title">Bebidas</h2>
-            
+
             <div class="item">
-                <img src="https://i.pinimg.com/736x/e9/a6/9b/e9a69b322c3fdec10b5448e4616095d3.jpg" 
-                     alt="Imagen de un Té verde japonés">
+                <img src="https://i.pinimg.com/736x/e9/a6/9b/e9a69b322c3fdec10b5448e4616095d3.jpg"
+                    alt="Imagen de un Té verde japonés">
                 <div>
                     <h3>Té Verde Matcha</h3>
-                    <p>Auténtico té verde matcha batido al estilo tradicional japonés. Una bebida pura, cremosa y llena de antioxidantes</p>
+                    <p>Auténtico té verde matcha batido al estilo tradicional japonés. Una bebida pura, cremosa y llena
+                        de antioxidantes</p>
                     <p class="precio" aria-label="Precio: 45 pesos">$45.00</p>
                 </div>
             </div>
 
             <div class="item">
-                <img src="https://i.pinimg.com/736x/03/4d/91/034d9115d506db1948e433562fc830c8.jpg" 
-                     alt="Imagen de bebidas japonesas Ramune">
+                <img src="https://i.pinimg.com/736x/03/4d/91/034d9115d506db1948e433562fc830c8.jpg"
+                    alt="Imagen de bebidas japonesas Ramune">
                 <div>
                     <h3>Ramune</h3>
-                    <p>Refresco tradicional japonés que encanta por su peculiar botella de cristal sellada con una canica. Disponible en sabores refrescantes: Original, Fresa y Melón</p>
+                    <p>Refresco tradicional japonés que encanta por su peculiar botella de cristal sellada con una
+                        canica. Disponible en sabores refrescantes: Original, Fresa y Melón</p>
                     <p class="precio" aria-label="Precio: 35 pesos">$35.00</p>
                 </div>
             </div>
 
             <div class="item">
-                <img src="https://i.pinimg.com/736x/64/11/78/641178bcda86cdbfd0a19adab1b032b5.jpg" 
-                     alt="Imagen de bebida Sake">
+                <img src="https://i.pinimg.com/736x/64/11/78/641178bcda86cdbfd0a19adab1b032b5.jpg"
+                    alt="Imagen de bebida Sake">
                 <div>
                     <h3>Sake</h3>
-                    <p>Selección premium de licor de arroz japonés, servido a la temperatura de tu elección: frío o caliente</p>
+                    <p>Selección premium de licor de arroz japonés, servido a la temperatura de tu elección: frío o
+                        caliente</p>
                     <p class="precio" aria-label="Precio: 95 pesos">$95.00</p>
                 </div>
             </div>
         </section>
 
+        <section id="beneficios" class="beneficios" aria-labelledby="beneficios-title">
+            <h2>¿Por qué digitalizar tu menú?</h2>
+            <p class="beneficios-intro">Moderniza tu restaurante y eleva la experiencia de tus clientes</p>
+
+            <div class="grid-beneficios">
+                <article class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <img src="img/qr2.png" alt="Imagen de icono de Acceso inmediato">
+                    </div>
+                    <h3>Acceso inmediato desde cualquier celular</h3>
+                    <p>Un solo escaneo y tu menú aparece al instante en el celular de tus clientes</p>
+                </article>
+
+                <article class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <img src="img/act2.png" alt="Imagen de icono de Actualizacion Rápida">
+                    </div>
+                    <h3>Actualización Rápida</h3>
+                    <p>Cambia precios y platillos al instante, sin gastar en reimpresiones</p>
+                </article>
+
+                <article class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <img src="img/menu2.png" alt="Imagen de icono de Diseño Profesional">
+                    </div>
+                    <h3>Diseño Profesional</h3>
+                    <p>Menús elegantes que resaltan tus platillos y crean una primera impresión impecable</p>
+                </article>
+            </div>
+
+            <div class="cta-beneficios">
+                <a href="demo.html" class="btn-demo-secundario">Explora el Demo Menu Completo </a>
+            </div>
+        </section>
+
+
+
+
+
     </main>
 
-         <section id="contacto" class="contacto" aria-labelledby="contacto-title">
+    <section id="contacto" class="contacto" aria-labelledby="contacto-title">
         <h2 id="contacto-title">¿Quieres un menu así para tu restaurante?</h2>
         <p>Contactanos y te ayudamos a digitalizar tu menu</p>
-        
-        <form aria-label="Foprmulario de contacto para restaurantes">
+
+        <form aria-label="Foprmulario de contacto para restaurantes" action="registro.html">
 
             <label for="nombre">Nombre del restaurante:</label>
             <input id="nombre" type="text" placeholder="Ej: Gorditas Don Kira" aria-required="true" required>
-            
+
             <label for="telefono">Teléfono:</label>
             <input id="telefono" type="tel" placeholder="+52 123 456 7890" aria-required="true" required>
-            
+
             <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" placeholder="Cuentanos sobre tu restaurante..." aria-required="true" required></textarea>
-            
-            <button type="submit" aria-label="Enviar formulario de contacto">Solicitar información</button>
+            <textarea id="mensaje" placeholder="Cuentanos sobre tu restaurante..." aria-required="true"
+                required></textarea>
+
+            <button type="submit" aria-label="Enviar formulario de contacto">Solicitar información </button>
         </form>
     </section>
 
     <footer>
-    <p>&copy; 2025 MenuFy - Menús digitales para restaurantes</p>
+        <p>&copy; 2025 MenuFy - Menús digitales para restaurantes</p>
     </footer>
 
 
 
 </body>
+
 </html>
